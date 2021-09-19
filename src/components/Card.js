@@ -2,9 +2,6 @@ import { set } from "mongoose";
 import React, { useState, useEffect } from "react";
 
 function Card(props) {
-  // setHandleRef = ref => {
-  //   this.handleRef = ref;
-  // }
   const [dragStartLeft, setDragStartLeft] = useState();
   const [dragStartTop, setDragStartTop] = useState();
   const [dragX, setDragX] = useState();
@@ -27,7 +24,7 @@ function Card(props) {
     window.addEventListener("mouseup", stopDragging, false);
   };
 
-  const startDragging = ({ screenX, screenY, clientX, clientY }) => {
+  const startDragging = ({ screenX, screenY }) => {
     setX_axis(screenX);
     setY_axis(screenY);
     setMouseUsed(true);

@@ -74,7 +74,6 @@ function App() {
                       <input
                         type='number'
                         name='x-axis'
-                        // value={dot.x_axis - 117}
                         value={dot.x_axis}
                         onChange={(e) => {
                           if (e.target.value > -1 && e.target.value < 101)
@@ -88,7 +87,6 @@ function App() {
                       <input
                         type='number'
                         name='y-axis'
-                        // value={-252 - dot.y_axis}
                         value={dot.y_axis}
                         onChange={(e) => {
                           if (e.target.value < 101 && e.target.value > -1)
