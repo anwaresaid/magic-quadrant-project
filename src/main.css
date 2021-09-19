@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 15px;
+}
+.flexbox .board {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  background-color: #696969;
+  padding: 15px;
+}
+
+.card {
+  height: 15px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 15px;
+  background-color: #3878a2;
+  border-radius: 50%;
+  display: inline-block;
+  text-indent: 2em;
+}
+
+.plabel {
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #3878a2;
+}
+.flexbox .board {
+  padding: 15px 25px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.flexbox .board .card .label {
+  margin-top: 10px;
+}
+
+.myCanv {
+  border: solid 2px #696969;
+  position: relative;
+  top: 25%;
+  height: 400px;
+  width: 400px;
+  padding: 15px 25px;
+
+  cursor: pointer;
+}
+.addBtn {
+  position: relative;
+  left: -48%;
+}
+.dataForm {
+  position: relative;
+  right: 68%;
+  top: 25%;
+  width: 100px;
+  height: 100px;
+}
+
+.challenger {
+  background-color: #adb9c3;
+  font-family: sans-serif;
+  border-radius: 10%;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -112%;
+  left: 10%;
+  width: 110px;
+}
+.leaders {
+  background-color: #adb9c3;
+  font-family: sans-serif;
+  border-radius: 10%;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -117.2%;
+  left: 67%;
+  width: 110px;
+}
+.niche {
+  background-color: #adb9c3;
+  font-family: sans-serif;
+  border-radius: 10%;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -22%;
+  left: 10%;
+  width: 110px;
+}
+
+.vision {
+  background-color: #adb9c3;
+  font-family: sans-serif;
+  border-radius: 10%;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -27%;
+  left: 67%;
+  width: 110px;
+}
+.xline {
+  width: 400px;
+  top: 50%;
+  left: -7.5%;
+  border-bottom: 2px solid #e3e4e7;
+  position: relative;
+}
+
+.yline {
+  height: 400px;
+  top: -5%;
+  left: 50%;
+  border-left: 2px solid #e3e4e7;
+  position: relative;
+}
+
+button {
+  border: 1px #e3e4e7;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 70px;
+  height: 30px;
+  margin-left: 50px;
+}
+
+.deleteBtn {
+  border: none !important;
+  background-color: #e3e4e7;
+  text-align: center !important;
+  cursor: pointer;
+}
+
+table {
+  width: 100px;
+}
+th {
+  text-align: center;
+  font-size: 15px;
+  background-color: #adb9c3;
+  color: white;
+  padding: 8px;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  border: none;
+}
+input[type="number"] {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+td:focus-within {
+  border: 2px solid #3878a2;
+}
+
+.y-label {
+  position: relative;
+  transform: rotate(-90deg);
+  top: -80%;
+  left: -60%;
+}
+.x-label {
+  position: relative;
+  left: -5%;
+  top: -30%;
+}
+td {
+  border: 1px solid #696969;
+  text-align: left;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #696969;
+}
+.deleteBtn:hover {
+  background-color: #696969;
+}
